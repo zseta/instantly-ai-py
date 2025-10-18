@@ -1,0 +1,35 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "instantly-ai"
+dynamic = ["version"]
+authors = [
+  {name = "Attila Toth", email = "hello@attilatoth.dev"},
+]
+description = "Python client for the Instantly.ai API"
+dependencies = [
+  "requests>=2.32.5",
+]
+requires-python = ">= 3.10.12"
+readme = "readme.md"
+license = "MIT"
+keywords = ["instantly-ai", "email", "outreach", "crm"]
+
+[project.optional-dependencies]
+dev = [
+    "faker>=18.9.1",
+]
+
+[project.urls]
+Homepage = "https://instantly.ai"
+Documentation = "https://docs.instantly.ai"
+Repository = "https://github.com/zseta/instantly-ai-py.git"
+Issues = "https://github.com/zseta/instantly-ai-py/issues"
+
+[tool.hatch.version]
+path = "src/instantly/__init__.py"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/instantly"]
