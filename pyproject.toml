@@ -24,7 +24,7 @@ dev = [
 
 [project.urls]
 Homepage = "https://instantly.ai"
-Documentation = "https://docs.instantly.ai"
+Documentation = "https://developer.instantly.ai/"
 Repository = "https://github.com/zseta/instantly-ai-py.git"
 Issues = "https://github.com/zseta/instantly-ai-py/issues"
 
